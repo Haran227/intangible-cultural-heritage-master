@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springboot.mapper.CultureMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.springboot.entity.CultureEntity">
+        <id column="id" property="id" />
+        <result column="city" property="city" />
+        <result column="code" property="code" />
+        <result column="serial" property="serial" />
+        <result column="name" property="name" />
+        <result column="category" property="category" />
+        <result column="announce" property="announce" />
+        <result column="type" property="type" />
+        <result column="reporting" property="reporting" />
+        <result column="protection" property="protection" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, city, code, serial, name, category, announce, type, declare, protect
+    </sql>
+
+</mapper>
